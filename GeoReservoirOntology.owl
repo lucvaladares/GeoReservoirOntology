@@ -829,7 +829,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#UFRGS:GeoReservoirOntology_levee_unit</IRI>
-        <Literal xml:lang="en">This term is not consensual as some authors refer to these units as the wedge-shape embankments around channels, which is the definition that we adopt here, while other authors refer to them as not necessarily being these embankments, among other definitions.</Literal>
+        <Literal xml:lang="en">This term is not consensual as some authors refer to these units as the wedge-shape embankments around channels, which is the definition that we adopt here, while other authors refer to them as not necessarily being these embankments and possibly having wing shapes, among other definitions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
