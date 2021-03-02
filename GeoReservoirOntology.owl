@@ -628,7 +628,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoReservoirOntology_channel_unit</IRI>
-        <Literal xml:lang="en">A Depositional Unit consisting of some Channel Surface and some Sediment or Sedimentary Rock that fills it (McHargue et al, 2011).</Literal>
+        <Literal xml:lang="en">An elongated Depositional Unit having some Channel Surface as its boundary and constituted by some Sediment or Sedimentary Rock that fills it (McHargue et al., 2011).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
