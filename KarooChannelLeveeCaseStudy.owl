@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://www.inf.ufrgs.br/bdi/ontologies/karoochannelleveecasestudy"
-     versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/karoochannelleveecasestudy/1.0">
+     versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/karoochannelleveecasestudy/1.1">
     <Prefix name="" IRI="https://www.inf.ufrgs.br/bdi/ontologies/karoochannelleveecasestudy"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -77,25 +77,31 @@
         <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_siltstone"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_complex"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_cc1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channelized"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_external_levee"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_massive"/>
@@ -107,19 +113,13 @@
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_non_channelized"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded_sand_siltstone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
@@ -131,59 +131,95 @@
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_channel_unit"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_complex"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_cc1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_channel_unit"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
             <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
         </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_channel_unit"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
             <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
         </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_channel_unit"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_facies_association"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channelized"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_depositional_unit"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+            <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_depositional_unit"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+            <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+            <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_siltstone"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_depositional_unit"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+            <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_levee_unit"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_external_levee"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
             <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
         </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_external_levee"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
             <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_siltstone"/>
         </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_external_levee"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_depositional_system"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_sedimentary_structure"/>
@@ -198,53 +234,6 @@
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_non_channelized"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_depositional_unit"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
-            <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_depositional_unit"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
-            <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
-            <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_siltstone"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_depositional_unit"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
-            <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_sandstone"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
-            <Class IRI="#UFRGS:KarooChannelLeveeCaseStudy_siltstone"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_sedimentary_structure"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded"/>
     </ClassAssertion>
@@ -252,65 +241,79 @@
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_sedimentary_facies"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded_sand_siltstone"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology#UFRGS:GeoReservoirOntology_depositional_system"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_complex"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_cc1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_complex"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_complex"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_cc1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_spatially_disconnected_from"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_left_of"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_left_of"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_left_of"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
@@ -323,84 +326,104 @@
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded_sand_siltstone"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_external_levee"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_complex"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_spatially_disconnected_from"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_left_of"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_external_levee"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_complex"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_complex"/>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_left_of"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_left_of"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_above"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_cc1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3"/>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_cc1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_external_levee"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
+        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_left_of"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_cc1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_massive"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_massive"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_massive"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_massive"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_massive_sandstone"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_massive_sandstone"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_massive_sandstone"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_1"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_massive_sandstone"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
@@ -408,74 +431,84 @@
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded_sand_siltstone"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_1"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_1"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_spatially_disconnected_from"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_external_levee"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded_sand_siltstone"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_external_levee"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
         <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded_sand_siltstone"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_2"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded_sand_siltstone"/>
-        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_part_3"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_cc1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_ch3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_du3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_unit_c"/>
+        <NamedIndividual IRI="#UFRGS:KarooChannelLeveeCaseStudy_el1"/>
     </ObjectPropertyAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_channel_complex</IRI>
-        <Literal xml:lang="en">channel complex</Literal>
+        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_cc1</IRI>
+        <Literal xml:lang="en">cc1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_channel_element_1</IRI>
-        <Literal xml:lang="en">channel element 1</Literal>
+        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_ch1</IRI>
+        <Literal xml:lang="en">ch1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_channel_element_2</IRI>
-        <Literal xml:lang="en">channel element 2</Literal>
+        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_ch2</IRI>
+        <Literal xml:lang="en">ch2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_channel_element_3</IRI>
-        <Literal xml:lang="en">channel element 3</Literal>
+        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_ch3</IRI>
+        <Literal xml:lang="en">ch3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -484,13 +517,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_external_levee</IRI>
-        <Literal xml:lang="en">external levee</Literal>
+        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_du1</IRI>
+        <Literal xml:lang="en">du1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_karoo_channel_levee_system</IRI>
-        <Literal xml:lang="en">karoo channel-levee system</Literal>
+        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_du2</IRI>
+        <Literal xml:lang="en">du2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_du3</IRI>
+        <Literal xml:lang="en">du3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_el1</IRI>
+        <Literal xml:lang="en">el1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -506,21 +549,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:KarooChannelLeveeCaseStudy_non_channelized</IRI>
         <Literal xml:lang="en">non-channelized</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_part_1</IRI>
-        <Literal xml:lang="en">part 1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_part_2</IRI>
-        <Literal xml:lang="en">part 2</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_part_3</IRI>
-        <Literal xml:lang="en">part 3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -541,6 +569,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:KarooChannelLeveeCaseStudy_thin_bedded_sand_siltstone</IRI>
         <Literal xml:lang="en">thin bedded sand/siltstone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:KarooChannelLeveeCaseStudy_unit_c</IRI>
+        <Literal xml:lang="en">Unit C</Literal>
     </AnnotationAssertion>
 </Ontology>
 

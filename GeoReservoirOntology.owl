@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology"
-     versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology/1.0">
+     versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology/1.1">
     <Prefix name="" IRI="https://www.inf.ufrgs.br/bdi/ontologies/georeservoirontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -633,7 +633,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#UFRGS:GeoReservoirOntology_channel_unit</IRI>
-        <Literal xml:lang="en">In stratigraphic terms, a channel unit is constituted by the sediments or sedimentary rocks that fill a channel. It is important to notice that, in more general terms, a channel is a passageway for fluids or sediments, i.e., an immaterial entity. Shall one elaborate about the erosion and deposition processes that generate these units (McHargue et al., 2011), it is essential to have this disambiguation.</Literal>
+        <Literal xml:lang="en">In stratigraphic terms, a channel unit is constituted by the sediments or sedimentary rocks that fill a channel. It is important to notice that, in more general terms, a channel is a passageway for fluids or sediments, i.e., an immaterial entity. If one elaborates about the erosion and deposition processes that generate these units (McHargue et al., 2011), it is essential to have this disambiguation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -653,7 +653,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoReservoirOntology_depositional_system</IRI>
-        <Literal xml:lang="en">An Object Aggregate whose members are mereotopologically linked Depositional Units.</Literal>
+        <Literal xml:lang="en">An Object Aggregate whose members are mereotopologically-linked Depositional Units.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -668,7 +668,12 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoReservoirOntology_depositional_unit</IRI>
-        <Literal xml:lang="en">A Sedimentary Geological Object recognizable in a mapping scale of at least 1:1000 m.</Literal>
+        <Literal xml:lang="en">A Sedimentary Geological Object having a dimension of at least 1 m in at least one of its extents (width, length, or thickness).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UFRGS:GeoReservoirOntology_depositional_unit</IRI>
+        <Literal xml:lang="en">A Depositional Unit is recognizable in a mapping scale of at least 1:1000.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -708,7 +713,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoReservoirOntology_facies_association</IRI>
-        <Literal xml:lang="en">A Generically Dependent Continuant that consists of a collective of Facies.</Literal>
+        <Literal xml:lang="en">A Generically Dependent Continuant that consists of an aggregate of Facies.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
