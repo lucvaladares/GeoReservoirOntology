@@ -6,6 +6,10 @@ To open and visualize the GeoReservoir ontology, we recommend using the [Protég
 
 ## Project structure
 
+To download the GeoReservoir ontology files, go to the [Releases](https://github.com/BDI-UFRGS/GeoReservoirOntology/releases) section.
+
+The project is organized as follows:
+
 - GeoReservoirOntology.owl - The main GeoReservoir ontology file
 - KarooChannelLeveeCaseStudy.owl - A case study containing a usage example
 - ./imports - Folder containing the local copies of imported ontologies
