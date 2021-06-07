@@ -574,6 +574,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#UFRGS_GRO_has_quality_value"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#UFRGS_GRO_has_quality_value"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <AnnotationAssertion>
