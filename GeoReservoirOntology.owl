@@ -547,6 +547,9 @@
         <DataProperty IRI="#UFRGS_GRO_has_quality_value"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#UFRGS_GRO_has_quality_value"/>
+    </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#UFRGS_GRO_has_measurement_unit"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
@@ -558,6 +561,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#UFRGS_GRO_has_measurement_unit"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#UFRGS_GRO_has_quality_value"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
