@@ -142,6 +142,9 @@
         <Class IRI="#UFRGS_GRO_sedimentary_structure"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UFRGS_GRO_sheet_unit"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#UFRGS_GRO_sinuosity"/>
     </Declaration>
     <Declaration>
@@ -469,6 +472,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UFRGS_GRO_sheet_unit"/>
+        <Class IRI="#UFRGS_GRO_depositional_unit"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UFRGS_GRO_sinuosity"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </SubClassOf>
@@ -547,6 +554,9 @@
         <DataProperty IRI="#UFRGS_GRO_has_quality_value"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#UFRGS_GRO_has_measurement_unit"/>
+    </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#UFRGS_GRO_has_quality_value"/>
     </FunctionalDataProperty>
@@ -966,6 +976,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS_GRO_sedimentary_structure</IRI>
         <Literal xml:lang="en">sedimentary structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#UFRGS_GRO_sheet_unit</IRI>
+        <Literal>A depositional unit which thickness has negligible variation across the body.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS_GRO_sheet_unit</IRI>
+        <Literal>sheet unit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
